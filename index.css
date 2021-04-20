@@ -7,7 +7,7 @@
 }
 
 :root {
-  --theme-color: #fff;
+  --theme-color: #c62641;
 }
 
 body {
@@ -18,10 +18,15 @@ main {
   height: 100vh;
 }
 
+.bg-body {
+  background-color: var(--theme-color) !important;
+}
+
 #tables {
   height: 100vh;
   border-right: 0.1rem solid #f1f1f1;
   padding-right: 0 !important;
+  box-shadow: 0.1rem 0 1rem 0rem rgba(0, 0, 0, 0.1);
 }
 
 #tables a {
@@ -30,10 +35,8 @@ main {
 
 #tables .active {
   background-color: #f1f1f1;
+  /* background-color: var(--theme-color); */
   color: initial;
-}
-
-#tables ul {
 }
 
 #tables ul li {
@@ -66,4 +69,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.material-icons {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  color: #444;
 }
