@@ -23,7 +23,7 @@
         </nav>
     <main class="container-fliud">
         <div class="row" style="padding-right: none">
-            <div id="filter" class="col-2">
+            <div id="tables" class="col-2">
                 <div class="list-group" id="list-tab" role="tablist">
                     <a class="list-group-item list-group-item-action active" id="list-retailers-list" data-bs-toggle="list" href="#list-retailers"
                         role="tab" aria-controls="retailers">Retailers</a>
@@ -35,22 +35,70 @@
                         href="#list-cars" role="tab" aria-controls="cars">Cars</a>
                     <a class="list-group-item list-group-item-action" id="list-revenue-list" data-bs-toggle="list" href="#list-revenue"
                         role="tab" aria-controls="revenue">Revenue</a>
-                        <a class="list-group-item list-group-item-action" id="list-employees-list" data-bs-toggle="list" href="#list-employees"
-                        role="tab" aria-controls="employees">Employees</a>
-                        <a class="list-group-item list-group-item-action" id="list-pt-list" data-bs-toggle="list" href="#list-pt"
-                            role="tab" aria-controls="pt">Product Tracking</a>
-                    </div>
+                    <a class="list-group-item list-group-item-action" id="list-employees-list" data-bs-toggle="list" href="#list-employees"
+                    role="tab" aria-controls="employees">Employees</a>
+                    <a class="list-group-item list-group-item-action" id="list-pt-list" data-bs-toggle="list" href="#list-pt"
+                        role="tab" aria-controls="pt">Product Tracking</a>
+                </div>
             </div>
             <div id="results" class="col-10">
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-retailers-list">
-                     
+                    <br>
+                <div class="input-group mb-3" id="search">
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="search">
+                </div>
+                    <!-- Retailers -->
+                <div class="tab-pane fade show active" id="list-retailers" role="tabpanel" aria-labelledby="list-retailers-list">
+                      
+                        <br>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Field</th>
+                                    <th scope="col">Field</th>
+                                    <th scope="col">Field</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                    <td>Value</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+
+                    <!-- Suppliers -->
                     <div class="tab-pane fade" id="list-suppliers" role="tabpanel" aria-labelledby="list-suppliers-list">suppliers</div>
+
+                    <!-- Goods -->
                     <div class="tab-pane fade" id="list-goods" role="tabpanel" aria-labelledby="list-settings-list">goods</div>
+
+                    <!-- Cars -->
                     <div class="tab-pane fade" id="list-cars" role="tabpanel" aria-labelledby="list-cars-list">cars</div>
+
+                    <!-- Revenue -->
                     <div class="tab-pane fade" id="list-revenue" role="tabpanel" aria-labelledby="list-revenue-list">revenue</div>
+
+                    <!-- Employees -->
                     <div class="tab-pane fade" id="list-employees" role="tabpanel" aria-labelledby="list-employees-list">employees</div>
+
+                    <!-- Product Tracking -->
                     <div class="tab-pane fade" id="list-pt" role="tabpanel" aria-labelledby="list-pt-list">product tracking</div>
                 </div>
             </div>

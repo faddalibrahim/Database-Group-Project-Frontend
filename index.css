@@ -18,27 +18,46 @@ main {
   height: 100vh;
 }
 
-#filter {
+#tables {
   height: 100vh;
   border-right: 0.1rem solid #f1f1f1;
   padding-right: 0 !important;
 }
 
-#filter a {
+#tables a {
   border: none !important;
 }
 
-#filter .active {
+#tables .active {
   background-color: #f1f1f1;
   color: initial;
 }
 
-#filter ul {
+#tables ul {
 }
 
-#filter ul li {
+#tables ul li {
   border: none !important;
   cursor: pointer;
+}
+
+#search {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+}
+
+#search input {
+  box-shadow: none;
+  font-family: sans-serif;
+}
+
+#search input:focus {
+  border-color: #a0a0a0;
+}
+.table {
+  /* margin-right: 10rem !important; */
+  width: 90%;
 }
 
 body {
